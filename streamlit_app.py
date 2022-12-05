@@ -12,7 +12,7 @@ s3 = boto3.client('s3',aws_access_key_id=st.secrets["AWS"]["ACCESS_KEY"],aws_sec
 
 st.title('legome by Ben Moss')
 
-image_data = st.file_uploader('Upload Portrait Image',['png','jpg'])
+image_data = st.file_uploader('Upload Square Portrait Image',['png','jpg'])
 
 if image_data is not None:
     # To read file as bytes:
